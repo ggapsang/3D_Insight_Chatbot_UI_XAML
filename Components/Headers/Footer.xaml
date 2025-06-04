@@ -6,9 +6,14 @@
              xmlns:button="clr-namespace:ChatBoxUI.Components.Buttons"
              xmlns:inputbox="clr-namespace:ChatBoxUI.Components.InputBoxes"
              mc:Ignorable="d"
-             Height="60" Width="360"
+             Height="60"
              d:DesignHeight="60" d:DesignWidth="360">
     <Grid Background="#FFF0F0F0">
-        <inputbox:UserInputBox Height="28" Width="320" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <inputbox:UserInputBox Height="28" VerticalAlignment="Center" HorizontalAlignment="Stretch" Grid.Column="1"/>
     </Grid>
 </UserControl>  
