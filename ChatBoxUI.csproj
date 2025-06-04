@@ -14,8 +14,16 @@
     <None Remove="Components\Messages\**" />
     <Page Remove="Components\Messages\**" />
   </ItemGroup>
+
   <ItemGroup>
-	  <Folder Include="Components\InputBoxes\" />
+    <None Remove="Components\Buttons\mic.png" />
+    <None Remove="Components\Buttons\setting.png" />
+    <None Remove="Components\Headers\PI_CI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Components\Buttons\mic.png" />
+    <Resource Include="Components\Buttons\setting.png" />
+    <Resource Include="Components\Headers\PI_CI.png" />
   </ItemGroup>
 	
 </Project>

@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="ChatBoxUI.Components.InputBoxes.UserInputBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChatBoxUI.Components.InputBoxes"
+             mc:Ignorable="d"
+             Width="320" Height="28"
+             d:DesignHeight="28" d:DesignWidth="320">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="28"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="24"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Width="320" Height="28"
+                   RadiusX="10" RadiusY="10"
+                   Fill="#E9E9E9"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"/>
+
+        <Image Source="../Buttons/setting.png" 
+               Width="20" Height="20" 
+               VerticalAlignment="Center" 
+               HorizontalAlignment="Left" 
+               Margin="8,0,0,0"
+               Grid.Column="0"
+               Panel.ZIndex="1"/>
+        
+    </Grid>
+</UserControl>
