@@ -16,11 +16,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Components\Buttons\Add.png" />
+    <None Remove="Components\Buttons\EditButton.png" />
     <None Remove="Components\Buttons\mic.png" />
     <None Remove="Components\Buttons\setting.png" />
     <None Remove="Components\Headers\PI_CI.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Components\Buttons\Add.png" />
+    <Resource Include="Components\Buttons\EditButton.png" />
     <Resource Include="Components\Buttons\mic.png" />
     <Resource Include="Components\Buttons\setting.png" />
     <Resource Include="Components\Headers\PI_CI.png" />

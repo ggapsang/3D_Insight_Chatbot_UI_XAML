@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ChatBoxUI.Components.Buttons.MakePromptButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChatBoxUI.Components.Buttons"
+             mc:Ignorable="d"
+             Width="100" Height="28"
+             d:DesignHeight="28" d:DesignWidth="100">
+    <Grid>
+        <Border CornerRadius="5" Background="Black">
+            <Button Background="Transparent" BorderThickness="0" Padding="0">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FFAAAAAA"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Viewbox Stretch="Uniform"
+                         HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Canvas Width="100" Height="28">
+                        <TextBlock Text="프롬프트 만들기" FontSize="10" Foreground="White"
+                                   FontWeight="SemiBold"
+                                   Canvas.Left="13" Canvas.Top="7"/>
+                    </Canvas>
+                </Viewbox>
+            </Button>
+        </Border>
+    </Grid>
+</UserControl>

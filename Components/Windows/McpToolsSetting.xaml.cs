@@ -18,7 +18,7 @@ namespace ChatBoxUI.Components.Windows
     /// <summary>
     /// McpToolsSetting.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class McpToolsSetting : UserControl
+    public partial class McpToolsSetting : Window
     {
         public McpToolsSetting()
         {

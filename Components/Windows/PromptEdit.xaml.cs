@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ChatBoxUI.Components.Windows
 {
     /// <summary>
-    /// ChatLogsConsoleMode.xaml에 대한 상호 작용 논리
+    /// PromptEdit.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class ChatLogsConsoleMode : Window
+    public partial class PromptEdit : Window
     {
-        public ChatLogsConsoleMode()
+        public PromptEdit()
         {
             InitializeComponent();
         }

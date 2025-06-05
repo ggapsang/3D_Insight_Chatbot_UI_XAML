@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ChatBoxUI.Components.Windows
+namespace ChatBoxUI.Components.InputBoxes
 {
     /// <summary>
-    /// ChatLogsConsoleMode.xaml에 대한 상호 작용 논리
+    /// PromptContentEditBox.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class ChatLogsConsoleMode : Window
+    public partial class PromptContentsEditBox : UserControl
     {
-        public ChatLogsConsoleMode()
+        public PromptContentsEditBox()
         {
             InitializeComponent();
         }

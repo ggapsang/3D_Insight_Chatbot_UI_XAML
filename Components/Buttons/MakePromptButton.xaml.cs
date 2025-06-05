@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ChatBoxUI.Components.Windows
+namespace ChatBoxUI.Components.Buttons
 {
     /// <summary>
-    /// ChatLogsConsoleMode.xaml에 대한 상호 작용 논리
+    /// MakePromptButton.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class ChatLogsConsoleMode : Window
+    public partial class MakePromptButton : UserControl
     {
-        public ChatLogsConsoleMode()
+        public MakePromptButton()
         {
             InitializeComponent();
         }

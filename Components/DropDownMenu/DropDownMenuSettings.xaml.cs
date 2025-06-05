@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ChatBoxUI.Components.DropDownMenu
 {
     /// <summary>
-    /// DropDwonMenuSettings.xaml에 대한 상호 작용 논리
+    /// DropDownMenuSettings.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class DropDwonMenuSettings : UserControl
+    public partial class DropDownMenuSettings : UserControl
     {
-        public DropDwonMenuSettings()
+        public DropDownMenuSettings()
         {
             InitializeComponent();
         }

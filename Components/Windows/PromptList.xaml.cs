@@ -18,11 +18,16 @@ namespace ChatBoxUI.Components.Windows
     /// <summary>
     /// PromptList.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class PromptList : UserControl
+    public partial class PromptList : Window
     {
         public PromptList()
         {
             InitializeComponent();
+        }
+
+        private void AddPromptButton1_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
