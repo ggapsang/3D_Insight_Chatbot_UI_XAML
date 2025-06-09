@@ -16,13 +16,19 @@ using System.Windows.Shapes;
 namespace ChatBoxUI.Components.Buttons
 {
     /// <summary>
-    /// CloseButton.xaml에 대한 상호 작용 논리
+    /// CloseButton.xaml에 대한 상호 작용 논리   
     /// </summary>
     public partial class CloseButton : UserControl
     {
         public CloseButton()
+            {
+                InitializeComponent();
+        }
+ 
+    private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            Window parentWindow = Window.GetWindow(this);
+            parentWindow?.Close();
         }
     }
 }

@@ -24,5 +24,21 @@ namespace ChatBoxUI.Components.Buttons
         {
             InitializeComponent();
         }
+
+        private void MaximizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window parentWindow = Window.GetWindow(this);
+            if (parentWindow != null)
+            {
+                if (parentWindow.WindowState == WindowState.Maximized)
+                {
+                    parentWindow.WindowState = WindowState.Normal;
+                }
+                else
+                {
+                    parentWindow.WindowState = WindowState.Maximized;
+                }
+            }
+        }
     }
 }

@@ -9,7 +9,10 @@
              d:DesignHeight="32" d:DesignWidth="32">
 
     <Grid>
-        <Button Background="Transparent" BorderThickness="0" Padding="0">
+        <Button Background="Transparent" 
+                BorderThickness="0" 
+                Padding="0"
+                Click="CloseButton_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>

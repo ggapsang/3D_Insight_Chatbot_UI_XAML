@@ -6,7 +6,9 @@
             Title="MainWindow" Height="600" Width="360"
             WindowStyle="None" 
             Background="Transparent"
-            ResizeMode="CanResize">
+            ResizeMode="CanResize"
+            ShowInTaskbar="True"
+            Icon="Components/Headers/PI_CI.png">
 
         <Grid>
             <Grid.RowDefinitions>
