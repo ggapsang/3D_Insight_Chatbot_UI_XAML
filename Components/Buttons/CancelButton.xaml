@@ -15,7 +15,8 @@
                 BorderBrush="#EAEAEA">
             <Button Background="Transparent" 
                     BorderThickness="0"
-                    Padding="0">
+                    Padding="0"
+                    Click="CancelButton_Click">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="Transparent"/>

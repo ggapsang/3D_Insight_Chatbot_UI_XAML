@@ -24,5 +24,17 @@ namespace ChatBoxUI.Components.Buttons
         {
             InitializeComponent();
         }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window parentWindow = Window.GetWindow(this);
+
+            if (parentWindow is ICancelable cancelable)
+            {
+                cancelable.OnCancel();
+            }
+
+            parentWindow?.Close();
+        }
     }
 }
