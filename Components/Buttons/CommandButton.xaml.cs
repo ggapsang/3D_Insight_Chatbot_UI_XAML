@@ -24,5 +24,17 @@ namespace ChatBoxUI.Components.Buttons
         {
             InitializeComponent();
         }
+
+        private void CommandButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window parentWindow = Window.GetWindow(this);
+            
+            if (parentWindow is Interfaces.IConfirmable confirmable)
+            {
+                confirmable.OnConfirm();
+            }
+            
+            parentWindow?.Close();
+        }
     }
 }

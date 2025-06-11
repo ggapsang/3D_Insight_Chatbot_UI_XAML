@@ -9,7 +9,10 @@
              d:DesignHeight="36" d:DesignWidth="48">
     <Grid>
         <Border CornerRadius="5" Background="Black">
-            <Button Background="Transparent" BorderThickness="0" Padding="0">
+            <Button Background="Transparent" 
+                    BorderThickness="0" 
+                    Padding="0"
+                    Click="CommandButton_Click">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="Transparent"/>

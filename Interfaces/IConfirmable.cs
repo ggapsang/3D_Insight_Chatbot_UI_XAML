@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChatBoxUI.Interfaces
 {
-    public interface ICancelable
+    internal interface IConfirmable
     {
-        void OnCancel();
+        void OnConfirm();
     }
 }
